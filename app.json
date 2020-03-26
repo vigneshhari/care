@@ -2,7 +2,7 @@
     "environments": {
       "test": {
         "scripts": {
-          "test": "pytest"
+          "test": "apt install libsqlite3-mod-spatialite && pytest"
         },
         "buildpacks": [{
             "url": "https://github.com/cyberdelia/heroku-geo-buildpack.git"
